@@ -36,6 +36,13 @@ func (mc *Client) Connect(host string) error {
 	return nil
 }
 
+func (mc *Client) FromConnection(conn net.Conn) error {
+	
+	mc.connection = conn.(*net.TCPConn)
+	return nil
+	
+}
+
 // Initializes the connection to the server by sending
 // the handshake packet and the login packet
 //
