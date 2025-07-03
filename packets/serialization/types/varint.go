@@ -1,10 +1,10 @@
-package types
+﻿package types
 
 import (
 	"bytes"
 	"reflect"
 
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto/varint"
 )
 
 func SerializeVarInt(field reflect.Value, databuf *bytes.Buffer) error {
@@ -52,3 +52,4 @@ func DeserializeVarLong(field reflect.Value, databuf *bytes.Buffer) error {
 
 	return nil
 }
+

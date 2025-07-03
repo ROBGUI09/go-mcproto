@@ -1,11 +1,11 @@
-package packets
+﻿package packets
 
 import (
 	"bytes"
 	"errors"
 	"reflect"
 
-	"github.com/BRA1L0R/go-mcproto/packets/serialization"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization"
 )
 
 func getReflectValue(inter interface{}) (val reflect.Value, err error) {
@@ -48,3 +48,4 @@ func (p *MinecraftPacket) DeserializeData(inter interface{}) error {
 	databuf := bytes.NewBuffer(p.Data)
 	return serialization.DeserializeFields(val, databuf)
 }
+

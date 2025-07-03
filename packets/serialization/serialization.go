@@ -1,11 +1,11 @@
-package serialization
+﻿package serialization
 
 import (
 	"bytes"
 	"reflect"
 
-	"github.com/BRA1L0R/go-mcproto/packets/serialization/tagutils"
-	"github.com/BRA1L0R/go-mcproto/packets/serialization/types"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization/tagutils"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization/types"
 )
 
 func SerializeFields(t reflect.Value, databuf *bytes.Buffer) error {
@@ -48,3 +48,4 @@ func SerializeFields(t reflect.Value, databuf *bytes.Buffer) error {
 
 	return nil
 }
+

@@ -1,4 +1,4 @@
-package serialization_test
+﻿package serialization_test
 
 import (
 	"bytes"
@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/BRA1L0R/go-mcproto/packets/serialization"
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization"
+	"github.com/ROBGUI09/go-mcproto/varint"
 	"github.com/Tnze/go-mc/nbt"
 )
 
@@ -266,3 +266,4 @@ func TestStructArr(t *testing.T) {
 		t.Fatal("buffer length not as expected")
 	}
 }
+

@@ -1,6 +1,6 @@
-package models
+﻿package models
 
-import "github.com/BRA1L0R/go-mcproto/packets"
+import "github.com/ROBGUI09/go-mcproto/packets"
 
 type HandshakePacket struct {
 	// *packets.UncompressedPacket
@@ -11,3 +11,4 @@ type HandshakePacket struct {
 	ServerPort      uint16 `mc:"inherit"`
 	NextState       int32  `mc:"varint"`
 }
+

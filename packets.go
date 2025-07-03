@@ -1,9 +1,9 @@
-package mcproto
+﻿package mcproto
 
 import (
 	"io"
 
-	"github.com/BRA1L0R/go-mcproto/packets"
+	"github.com/ROBGUI09/go-mcproto/packets"
 )
 
 // SerializablePacket defines the standard methods that a struct should have
@@ -70,3 +70,4 @@ func (mc *Client) ReceivePacket() (*packets.MinecraftPacket, error) {
 
 	return packets.FromRawPacket(rawPacket)
 }
+

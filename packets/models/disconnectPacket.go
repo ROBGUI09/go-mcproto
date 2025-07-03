@@ -1,9 +1,10 @@
-package models
+﻿package models
 
-import "github.com/BRA1L0R/go-mcproto/packets"
+import "github.com/ROBGUI09/go-mcproto/packets"
 
 type DisconnectPacket struct {
 	packets.MinecraftPacket
 
 	Reason string `mc:"string"`
 }
+

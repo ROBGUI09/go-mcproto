@@ -1,12 +1,12 @@
-package serialization_test
+﻿package serialization_test
 
 import (
 	"bytes"
 	"reflect"
 	"testing"
 
-	"github.com/BRA1L0R/go-mcproto/packets/serialization"
-	"github.com/BRA1L0R/go-mcproto/packets/serialization/tagutils"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization/tagutils"
 	"github.com/Tnze/go-mc/nbt"
 )
 
@@ -118,3 +118,4 @@ func TestInvalidLength(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+

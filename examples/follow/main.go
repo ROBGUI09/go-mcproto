@@ -1,11 +1,11 @@
-package main
+﻿package main
 
 import (
 	"flag"
 
-	"github.com/BRA1L0R/go-mcproto"
-	"github.com/BRA1L0R/go-mcproto/packets"
-	"github.com/BRA1L0R/go-mcproto/packets/models"
+	"github.com/ROBGUI09/go-mcproto"
+	"github.com/ROBGUI09/go-mcproto/packets"
+	"github.com/ROBGUI09/go-mcproto/packets/models"
 )
 
 type EntityPositionUpdate struct {
@@ -185,3 +185,4 @@ func main() {
 func calculateDelta(delta int16) float64 {
 	return (float64(delta) / (32 * 128))
 }
+

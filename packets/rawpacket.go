@@ -1,4 +1,4 @@
-package packets
+﻿package packets
 
 import (
 	"bytes"
@@ -6,7 +6,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto/varint"
 )
 
 var (
@@ -173,3 +173,4 @@ func FromCompressedReader(reader io.Reader) (*MinecraftRawPacket, error) {
 
 	return packet, err
 }
+

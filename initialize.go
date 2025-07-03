@@ -1,12 +1,12 @@
-package mcproto
+﻿package mcproto
 
 import (
 	"errors"
 	"fmt"
 	"net"
 
-	"github.com/BRA1L0R/go-mcproto/packets"
-	"github.com/BRA1L0R/go-mcproto/packets/models"
+	"github.com/ROBGUI09/go-mcproto/packets"
+	"github.com/ROBGUI09/go-mcproto/packets/models"
 )
 
 // LoginDisconnectError rapresents the disconnection of the client during the login state,
@@ -120,3 +120,4 @@ func (mc *Client) Initialize(host string, port uint16, protocolVersion int32, us
 		}
 	}
 }
+

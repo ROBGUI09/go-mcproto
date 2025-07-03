@@ -1,8 +1,8 @@
-<div align="center">
+﻿<div align="center">
   <h1>go-mcproto</h1>
-  <a href="https://pkg.go.dev/github.com/BRA1L0R/go-mcproto"><img src="https://pkg.go.dev/badge/github.com/BRA1L0R/go-mcproto.svg" alt="Go Reference"></a>
-  <a href="http://github.com/BRA1L0R/go-mcproto"><img src="https://img.shields.io/github/go-mod/go-version/BRA1L0R/go-mcproto"></a>
-  <a href="https://github.com/BRA1L0R/go-mcproto/actions"><img src="https://img.shields.io/github/workflow/status/BRA1L0R/go-mcproto/Test?label=Unit%20Testing"></a>
+  <a href="https://pkg.go.dev/github.com/ROBGUI09/go-mcproto"><img src="https://pkg.go.dev/badge/github.com/ROBGUI09/go-mcproto.svg" alt="Go Reference"></a>
+  <a href="http://github.com/ROBGUI09/go-mcproto"><img src="https://img.shields.io/github/go-mod/go-version/ROBGUI09/go-mcproto"></a>
+  <a href="https://github.com/ROBGUI09/go-mcproto/actions"><img src="https://img.shields.io/github/workflow/status/ROBGUI09/go-mcproto/Test?label=Unit%20Testing"></a>
 </div>
 
 ## Install
@@ -10,7 +10,7 @@
 Go 1.16.x is required to use this library
 
 ```sh
-go get github.com/BRA1L0R/go-mcproto
+go get github.com/ROBGUI09/go-mcproto
 ```
 
 ## Opening a connection
@@ -180,8 +180,8 @@ This example initializes the connection between the client and a server, thus sw
 package main
 
 import (
-	"github.com/BRA1L0R/go-mcproto"
-	"github.com/BRA1L0R/go-mcproto/packets/models"
+	"github.com/ROBGUI09/go-mcproto"
+	"github.com/ROBGUI09/go-mcproto/packets/models"
 )
 
 func main() {
@@ -210,3 +210,4 @@ func main() {
   }
 }
 ```
+

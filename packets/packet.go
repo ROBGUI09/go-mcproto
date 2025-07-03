@@ -1,11 +1,11 @@
-package packets
+﻿package packets
 
 import (
 	"bytes"
 	"compress/zlib"
 	"io"
 
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto/varint"
 )
 
 // Basic struct containing the PacketID and many methods
@@ -85,3 +85,4 @@ func FromRawPacket(rawPacket *MinecraftRawPacket) (*MinecraftPacket, error) {
 
 	return packet, nil
 }
+

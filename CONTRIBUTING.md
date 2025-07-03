@@ -1,4 +1,4 @@
-# **Contributing to go-mcproto**
+﻿# **Contributing to go-mcproto**
 
 You can contribute by:
 
@@ -10,7 +10,7 @@ You can contribute by:
 
 ## **How to setup the repository**
 
-1. Run <code>git clone https://github.com/BRA1L0R/go-mcproto</code>
+1. Run <code>git clone https://github.com/ROBGUI09/go-mcproto</code>
 2. Install golangcgi-lint, as it is required and run by git hooks. Follow [this guide](https://golangci-lint.run/usage/install/#local-installation)
    2.1. I also recommend setting up editor integration (most of them are supported) by following [this guide](https://golangci-lint.run/usage/install/#local-installation)
 3. Run <code>./init-hooks.sh</code> to setup git hooks for unit testing and linting
@@ -69,3 +69,4 @@ When you report a bug it is important that you follow these simple rules! This w
 
 9. Write the title and a comment and finally click the green button to create the pull request
    ![image](https://i.ibb.co/wCQppy7/image.png)
+

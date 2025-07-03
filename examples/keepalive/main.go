@@ -1,12 +1,12 @@
-package main
+﻿package main
 
 import (
 	"flag"
 	"fmt"
 
-	"github.com/BRA1L0R/go-mcproto"
-	"github.com/BRA1L0R/go-mcproto/packets/models"
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto"
+	"github.com/ROBGUI09/go-mcproto/packets/models"
+	"github.com/ROBGUI09/go-mcproto/varint"
 )
 
 var (
@@ -55,3 +55,4 @@ func main() {
 		}
 	}
 }
+

@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"encoding/json"
@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/BRA1L0R/go-mcproto"
-	"github.com/BRA1L0R/go-mcproto/packets"
-	"github.com/BRA1L0R/go-mcproto/packets/models"
+	"github.com/ROBGUI09/go-mcproto"
+	"github.com/ROBGUI09/go-mcproto/packets"
+	"github.com/ROBGUI09/go-mcproto/packets/models"
 )
 
 type ClientBoundChatMessage struct {
@@ -120,3 +120,4 @@ func main() {
 		}
 	}
 }
+

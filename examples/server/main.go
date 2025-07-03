@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"encoding/base64"
@@ -8,9 +8,9 @@ import (
 	"net"
 	"os"
 
-	"github.com/BRA1L0R/go-mcproto"
-	"github.com/BRA1L0R/go-mcproto/examples/server/types"
-	"github.com/BRA1L0R/go-mcproto/packets"
+	"github.com/ROBGUI09/go-mcproto"
+	"github.com/ROBGUI09/go-mcproto/examples/server/types"
+	"github.com/ROBGUI09/go-mcproto/packets"
 )
 
 type Handshake struct {
@@ -130,3 +130,4 @@ func main() {
 		go HandleClient(client)
 	}
 }
+

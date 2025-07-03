@@ -1,10 +1,10 @@
-package varint_test
+﻿package varint_test
 
 import (
 	"bytes"
 	"testing"
 
-	"github.com/BRA1L0R/go-mcproto/varint"
+	"github.com/ROBGUI09/go-mcproto/varint"
 )
 
 func TestVarInt(t *testing.T) {
@@ -86,3 +86,4 @@ func TestVarLong(t *testing.T) {
 		}
 	}
 }
+

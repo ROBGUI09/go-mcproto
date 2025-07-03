@@ -1,10 +1,10 @@
-package tagutils_test
+﻿package tagutils_test
 
 import (
 	"reflect"
 	"testing"
 
-	"github.com/BRA1L0R/go-mcproto/packets/serialization/tagutils"
+	"github.com/ROBGUI09/go-mcproto/packets/serialization/tagutils"
 )
 
 func TestCheckDependency(t *testing.T) {
@@ -27,3 +27,4 @@ func TestCheckDependency(t *testing.T) {
 		t.Error("dependency should have been true but function returned a false")
 	}
 }
+
