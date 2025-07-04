@@ -20,6 +20,10 @@ type MinecraftRawPacket struct {
 	data         []byte
 }
 
+func (rp *MinecraftRawPacket) Data() ([]byte) {
+	return rp.data
+}
+
 // NewReader opens a bytes.Buffer or zlib readcloser depending if the packet
 // is compressed or not
 func (rp *MinecraftRawPacket) NewReader() (io.ReadCloser, error) {
