@@ -90,10 +90,10 @@ func (mc *Client) Initialize(host string, port uint16, protocolVersion int32, us
 			return err
 		}
 
-		switch p.PacketID {
+		switch p.Packet.PacketID {
 		case 0x00: // disconnected
 			disconnectPacket := new(models.DisconnectPacket)
-			if err := p.DeserializeData(disconnectPacket); err != nil {
+			if err := p.Packet.DeserializeData(disconnectPacket); err != nil {
 				return err
 			}
 
@@ -102,7 +102,7 @@ func (mc *Client) Initialize(host string, port uint16, protocolVersion int32, us
 			return errors.New("mcproto: received an encryption request which means the server is in online mode. Online mode not currently supported")
 		case 0x03: // set compression
 			setCompression := new(models.SetCompressionPacket)
-			err := p.DeserializeData(setCompression)
+			err := p.Packet.DeserializeData(setCompression)
 			if err != nil {
 				return err
 			}
@@ -114,7 +114,7 @@ func (mc *Client) Initialize(host string, port uint16, protocolVersion int32, us
 			mc.CompressionTreshold = setCompression.Treshold
 		case 0x02: // login success
 			loginSuccess := new(models.LoginSuccessPacket)
-			err := p.DeserializeData(loginSuccess)
+			err := p.Packet.DeserializeData(loginSuccess)
 
 			return err
 		}

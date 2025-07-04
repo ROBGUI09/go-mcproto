@@ -19,6 +19,12 @@ type SerializablePacket interface {
 	SerializeUncompressed(writer io.Writer) error
 }
 
+type PacketReceipt struct {
+	Packet    *packets.MinecraftPacket
+	RawPacket *packets.MinecraftRawPacket
+}
+
+
 // WritePacket calls SerializeData and then calls WriteRawPacket
 func (mc *Client) WritePacket(packet SerializablePacket) error {
 	mc.writeMu.Lock()
@@ -62,12 +68,23 @@ func (mc *Client) ReceiveRawPacket() (*packets.MinecraftRawPacket, error) {
 
 // ReceivePacket receives and deserializes a packet from the connection, uncompressing it
 // if necessary
-func (mc *Client) ReceivePacket() (*packets.MinecraftPacket, error) {
+func (mc *Client) ReceivePacket() (*PacketReceipt, error) {
 	rawPacket, err := mc.ReceiveRawPacket()
 	if err != nil {
 		return nil, err
 	}
 
-	return packets.FromRawPacket(rawPacket)
-}
+	// Try to deserialize, but don't fail completely if it doesn't work
+	packet, deserializeErr := packets.FromRawPacket(rawPacket)
+	
+	receipt := &PacketReceipt{
+		RawPacket: rawPacket,
+		Packet:    packet, // This will be nil if deserializeErr != nil
+	}
 
+	if deserializeErr != nil {
+		return receipt, deserializeErr
+	}
+	
+	return receipt, nil
+}
